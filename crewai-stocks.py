@@ -43,7 +43,7 @@ getStockPrice = Task(
 )
 
 # IMPORTANT A TOOL DE SEARCH 
-search_tool = DuckDuckGoSearchResults(backend='news', num_results=10)
+search_tool = DuckDuckGoSearchResults(backend='news', region="pt-BR", num_results=10)
 
 newsAnalyst = Agent(
     role = "Analista de notícias de ações",
