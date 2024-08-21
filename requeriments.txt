@@ -1,7 +1,7 @@
 yfinance
-crewai==0.28.8
-langchain==0.1.20
-langchain-openai==0.1.7
-langchain-community==0.0.38
-duckduckgo-search==5.3.0
+crewai
+langchain
+langchain-openai
+langchain-community
+duckduckgo-search
 pysqlite3-binary
