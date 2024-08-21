@@ -11,7 +11,7 @@ from langchain_community.tools import DuckDuckGoSearchResults
 
 # CRIANDO YAHOO FINANCE TOOL 
 def fetch_stock_price(ticket):
-    stock = yf.download(ticket, start="2022-08-08", end="2024-08-08")
+    stock = yf.download(ticket, start="2023-08-08", end="2024-08-08")
     return stock
 
 yahoo_finance_tool = Tool(
@@ -22,7 +22,7 @@ yahoo_finance_tool = Tool(
 
 # IMPORTANDO OPENAI LLM - GPT
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatOpenAI(model="gpt-3.5-turbo")
 
 stockPriceAnalyst = Agent(
     role = "Análise de preço de ações sênior",
